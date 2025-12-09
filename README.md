@@ -1,11 +1,13 @@
-# xkcd Daily
+# SMBC Daily
 
-#### 2025-12-04
+#### Posted December 8, 2025 at 11:20 am
 
-## On the Edge
+## Capital
 
-![On the Edge](data/2025-12-04/On%20the%20Edge.png)
+![Capital](archive/2025-12-08/Capital.png)
+
+**Hover Text:** Later, as a matter of principle, they have a 1 to 1 sex to children ratio.
 
 ---
 
-*This README is automatically updated with the latest xkcd comic.*
+*This README is automatically updated with the latest SMBC comic.*
