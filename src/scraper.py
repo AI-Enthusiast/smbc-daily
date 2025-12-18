@@ -217,7 +217,7 @@ def setup_daily_directory() -> str:
     """
     Create and return the path to today's data directory.
 
-    Creates a directory structure: archive/YYYY-MM-DD/ relative to the project root.
+    Creates a directory structure: data/YYYY-MM-DD/ relative to the project root.
 
     Returns:
         The absolute path to the created directory
@@ -225,9 +225,9 @@ def setup_daily_directory() -> str:
     # Get current date
     date = datetime.datetime.now().strftime("%Y-%m-%d")
 
-    # Construct path to archive directory
+    # Construct path to data directory
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    data_dir = os.path.join(project_root, 'archive', date)
+    data_dir = os.path.join(project_root, 'data', date)
 
     # Create directory if it doesn't exist
     os.makedirs(data_dir, exist_ok=True)

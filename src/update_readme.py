@@ -5,28 +5,28 @@ from pathlib import Path
 
 def get_most_recent_comic():
     """
-    Find the most recent SMBC comic in the archive directory.
+    Find the most recent SMBC comic in the data directory.
     Returns: tuple of (date, comic_title, image_path, metadata) or None if no comic found
     """
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    archive_dir = os.path.join(project_root, 'archive')
+    data_dir = os.path.join(project_root, 'data')
 
-    if not os.path.exists(archive_dir):
-        print(f"Archive directory not found: {archive_dir}")
+    if not os.path.exists(data_dir):
+        print(f"data directory not found: {data_dir}")
         return None
 
     # Get all date directories, sorted in reverse order (most recent first)
-    date_dirs = sorted([d for d in os.listdir(archive_dir)
-                       if os.path.isdir(os.path.join(archive_dir, d))],
+    date_dirs = sorted([d for d in os.listdir(data_dir)
+                       if os.path.isdir(os.path.join(data_dir, d))],
                       reverse=True)
 
     if not date_dirs:
-        print("No date directories found in archive folder")
+        print("No date directories found in data folder")
         return None
 
     # Get the most recent date directory
     most_recent_date = date_dirs[0]
-    most_recent_dir = os.path.join(archive_dir, most_recent_date)
+    most_recent_dir = os.path.join(data_dir, most_recent_date)
 
     # Find PNG files in that directory
     png_files = glob.glob(os.path.join(most_recent_dir, '*.png'))

@@ -1,12 +1,12 @@
 # SMBC Daily
 
-#### Posted December 8, 2025 at 11:20 am
+#### Posted December 17, 2025 at 11:20 am
 
-## Capital
+## Effigy
 
-![Capital](archive/2025-12-08/Capital.png)
+![Effigy](data/2025-12-17/Effigy.png)
 
-**Hover Text:** Later, as a matter of principle, they have a 1 to 1 sex to children ratio.
+**Hover Text:** The anti-Susan pamphleteering outside the house is also a difficulty their marriage has to work through.
 
 ---
 
